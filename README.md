@@ -32,7 +32,7 @@ The key variables used in the analysis are as follows:
   - `4` = 15 years  
   - `5` = 16 years  
   - `6` = 17 years  
-  - `7` = 18 years  
+  - `7` = ≥ 18 years  
 
 - **bmi:** Adolescent's Body Mass Index (BMI).
 

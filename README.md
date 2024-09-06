@@ -7,16 +7,56 @@ of the population. We formally introduce the policy-relevant target estimand and
 
 ## Data
 
-Our data application study of the beverage tax on adolescent soda consumption is based on this publicly available data----YRBS. The pre-processing procedure is demonstrated in the Code/did_preprocessing.R, with the data dictionary available.
+Our data application study of the beverage tax on adolescent soda consumption is based on this publicly available data----Youth Risk Behavior Surveillance (YRBS) data. The YRBS data provide a school-district level biennial survey from the YRBSS, managed by the Centers for Disease Control and
+Prevention (CDC).  The pre-processing procedure is demonstrated in the Code/did_preprocessing.R, with the data dictionary available.
+The data used in this study come from the following sources:
 
-Data/SADCQ.csv is the original data file and Data/realdata.csv is the data used for analysis in Code/real_data.R.
+- **Original Data File:** `Data/SADCQ.csv`
+- **Processed Data for Analysis:** `Data/realdata.csv`
 
-sex: 
-age: 
-bmi:
-race4: 
-soda_usage: 
-comb_group_label: 
-weight:
+The pre-processing procedures are demonstrated in the script `Code/did_preprocessing.R`, and the main analysis is conducted in `Code/real_data.R`. A data dictionary is also available for reference.
+
+**Variables**
+
+The key variables used in the analysis are as follows:
+
+- **sex:** Binary indicator of the adolescent's sex.  
+  - `1` = Female  
+  - `2` = Male  
+
+- **age:** Age of the adolescent.  
+  - `1` = ≤ 12 years  
+  - `2` = 13 years  
+  - `3` = 14 years  
+  - `4` = 15 years  
+  - `5` = 16 years  
+  - `6` = 17 years  
+  - `7` = 18 years  
+
+- **bmi:** Adolescent's Body Mass Index (BMI).
+
+- **race4:** Race of the adolescent.  
+  - `1` = White  
+  - `2` = Black or African American  
+  - `3` = Hispanic/Latino  
+  - `4` = All Other Races  
+
+- **soda_usage:** Average weekly soda consumption by the adolescent, categorized as follows:  
+  - `0` = 0 sodas per week  
+  - `2` = 1-3 sodas per week  
+  - `5` = 4-6 sodas per week  
+  - `7` = 7 sodas per week  
+  - `14` = 14 sodas per week  
+  - `21` = 21 sodas per week  
+  - `28` = 28 or more sodas per week  
+
+- **comb_group_label:** Group G indicator for treatment and control units.  
+  - `1` = Treated unit in the pre-treatment period  
+  - `2` = Treated unit in the post-treatment period  
+  - `3` = Control unit in the pre-treatment period  
+  - `4` = Control unit in the post-treatment period  
+
+- **weight:** Survey weights used in the analysis.
+
 
 ## Code

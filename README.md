@@ -6,8 +6,8 @@ challenges in using DiD methods with repeated cross-sectional (RCS) survey data:
 
 ## Data
 
-Our data application study of the beverage tax on adolescent soda consumption is based on this publicly available data----Youth Risk Behavior Surveillance (YRBS) data. The YRBS data provide a school-district level biennial survey from the YRBSS, managed by the Centers for Disease Control and
-Prevention (CDC).  The pre-processing procedure is demonstrated in the Code/did_preprocessing.R, with the data dictionary available.
+Our data application of the beverage tax on adolescent soda consumption is based on this publicly available data----Youth Risk Behavior Surveillance (YRBS) data. The YRBS data provide a school-district level biennial survey from the YRBSS, managed by the Centers for Disease Control and
+Prevention (CDC). 
 The data used in this study come from the following sources:
 
 - **Original Data File:** `Data/SADCQ.csv`

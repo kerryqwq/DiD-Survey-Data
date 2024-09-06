@@ -19,6 +19,8 @@ The pre-processing procedures are demonstrated in the script `Code/did_preproces
 
 The key variables used in the analysis are as follows:
 
+- **year:** Year when the survey was conducted. The year values are `2013`, `2015`, `2017`, and `2019`.
+    
 - **sex:** Binary indicator of the adolescent's sex.  
   - `1` = Female  
   - `2` = Male  
@@ -61,7 +63,9 @@ The key variables used in the analysis are as follows:
   - `1` if the unit is from the treated group and in the post-treatment period  
   - `0` otherwise
 
-## Code
- -`simulation.R`:
- -`bootfunction.R`:
--`read_data.R`:
+## Code 
+-`simulation.R`: In this simulation code, we demonstrate the finite sample performance of the proposed estimator, using the simulated RCS survey data. We consider total population of size N (500, 1000, 2000), divided equally between two time periods (t=0,1).  We compare our proposed estimator with other two IPW estimators. 
+ 
+-`bootfunction.R`:In this bootstrap function code, we define the bootstrap function for both the simulation and the real data application.
+ 
+-`real_data.R`: In this real data application code, we apply our proposed estimator, to the YRBS data to examine the effect of the beverage tax on soda consumption among high school students in Philadelphia.

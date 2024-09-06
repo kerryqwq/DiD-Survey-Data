@@ -11,7 +11,7 @@ Prevention (CDC).
 The data used in this study come from the following sources:
 
 - **Original Data File:** `Data/SADCQ.csv`
-- **Processed Data for Analysis:** `Data/realdata.csv`
+- **Processed Data for Analysis:** `Data/real_data.csv`
 
 The pre-processing procedures are demonstrated in the script `Code/DiD_preprocessing.R`, and the main analysis is conducted in `Code/real_data.R`. A data dictionary is also available for reference.
 
